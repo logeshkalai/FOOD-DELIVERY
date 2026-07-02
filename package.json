@@ -1,0 +1,13 @@
+{
+  "name": "silverbite-workspace",
+  "version": "1.0.0",
+  "description": "Root workspace configuration for SilverBite food delivery app",
+  "scripts": {
+    "start": "start-services.bat",
+    "db": "cmd /c \"start \"SilverBite MongoDB\" cmd /k \"\"e:\\food delivery\\mongodb\\mongodb-win32-x86_64-windows-4.4.29\\bin\\mongod.exe\" --dbpath \"e:\\food delivery\\mongodb\\data\"\"\"",
+    "backend": "npm --prefix SilverBite/backend start",
+    "backend:dev": "npm --prefix SilverBite/backend run dev",
+    "frontend": "npm --prefix SilverBite/frontend start",
+    "seed": "node SilverBite/backend/seed.js"
+  }
+}
